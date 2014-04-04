@@ -1,7 +1,7 @@
 prerender-parse
 ===============
 
-A parse.com adaptor for utilizing the prerender.io service.
+A parse.com adaptor for utilizing the [prerender.io](https://prerender.io) service.
 
 Installation
 ============
