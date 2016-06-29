@@ -18,7 +18,11 @@ var parseAdaptor = module.exports = function(Parse) {
       error: function(res) {
         console.error('Request failed with code ' + res.status);
         console.error(res);
-        callback(null);
+        
+        res.body = res.text;
+        res.statusCode = res.status;
+
+        callback(res);
       }
     });
   };
